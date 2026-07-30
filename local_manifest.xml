@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remotes -->
+  <remote name="github" fetch="https://github.com" />
+  <remote name="gitlab" fetch="https://gitlab.com" />
+
+  <!-- Device Tree -->
+  <project name="Justadeayo/device_xiaomi_violet" path="device/xiaomi/violet" remote="github" revision="16.2" />
+
+  <!-- Vendor Tree -->
+  <project name="Justadeayo/platform_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github" revision="16" />
+
+  <!-- Kernel Source Tree -->
+  <project name="Justadeayo/android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" remote="github" revision="sixteen" />
+
+  <!-- Firmware Repository (GitLab) -->
+  <project name="CuriousNom/chaste_vendor-xiaomi-firmware-violet" path="vendor/xiaomi-firmware/violet" remote="gitlab" revision="14.0" />
+
+  <!-- Hardware Xiaomi Override -->
+  <remove-project name="platform/hardware/xiaomi" />
+  <project name="Evolution-X-Devices/hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="bka-no-dolby" />
+  <remove-project name="platform/hardware/packages/DSPVolumeSynchronizer" />
+  
+  <!-- Dolby Hardware Source -->
+  <project name="adi8900/hardware_dolby" path="hardware/dolby" remote="github" revision="lunaris" />
+
+</manifest>
