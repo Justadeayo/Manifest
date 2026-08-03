@@ -6,7 +6,7 @@
   <remote name="gitlab" fetch="https://gitlab.com" />
 
   <!-- Device Tree -->
-  <project name="Justadeayo/device_xiaomi_violet" path="device/xiaomi/violet" remote="github" revision="16.2" />
+  <project name="Justadeayo/device_xiaomi_violet" path="device/xiaomi/violet" remote="github" revision="16" />
 
   <!-- Vendor Tree -->
   <project name="Justadeayo/platform_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github" revision="16" />
