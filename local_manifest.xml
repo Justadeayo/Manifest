@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Remotes
-  <remote name="github" fetch="https://github.com" />
-  -->
-  <remote name="gitlab" fetch="https://gitlab.com" />
+  <!-- Custom Remotes -->
+  <remote name="Justadeayo" fetch="https://github.com/Justadeayo" clone-depth="1" />
+  <remote name="GitLab-CuriousNom" fetch="https://gitlab.com/CuriousNom" clone-depth="1" />
+  <remote name="EvoX" fetch="https://github.com/Evolution-X-Devices" clone-depth="1" />
+  <remote name="adi8900" fetch="https://github.com/adi8900" clone-depth="1" />
 
   <!-- Device Tree -->
-  <project name="Justadeayo/device_xiaomi_violet" path="device/xiaomi/violet" remote="github" revision="16" />
+  <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="16.2" />
 
   <!-- Vendor Tree -->
-  <project name="Justadeayo/platform_vendor_xiaomi_violet" path="vendor/xiaomi/violet" remote="github" revision="16" />
+  <project path="vendor/xiaomi/violet" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="16" />
 
   <!-- Kernel Source Tree -->
-  <project name="Justadeayo/android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" remote="github" revision="sixteen" />
+  <project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="Justadeayo" revision="sixteen" />
 
   <!-- Firmware Repository (GitLab) -->
-  <project name="CuriousNom/chaste_vendor-xiaomi-firmware-violet" path="vendor/xiaomi-firmware/violet" remote="gitlab" revision="14.0" />
+  <project path="vendor/xiaomi-firmware/violet" name="chaste_vendor-xiaomi-firmware-violet" remote="GitLab-CuriousNom" revision="14.0" />
 
   <!-- Hardware Xiaomi Override -->
   <remove-project name="platform/hardware/xiaomi" />
-  <project name="Evolution-X-Devices/hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="bka-no-dolby" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="EvoX" revision="bka-no-dolby" />
+  
   <remove-project name="platform/hardware/packages/DSPVolumeSynchronizer" />
   
   <!-- Dolby Hardware Source -->
-  <project name="adi8900/hardware_dolby" path="hardware/dolby" remote="github" revision="lunaris" />
+  <project path="hardware/dolby" name="hardware_dolby" remote="adi8900" revision="lunaris" />
 
 </manifest>
