@@ -21,6 +21,9 @@
   <!-- Firmware Repository (GitLab) -->
   <project path="vendor/xiaomi-firmware/violet" name="chaste_vendor-xiaomi-firmware-violet" remote="GitLab-CuriousNom" revision="14.0" />
 
+  <!-- Miui Camera -->
+  <project path="vendor/MiuiCamera" name="Xiaomi_Camera" remote="Justadeayo" revision="cam" />
+  
   <!-- Hardware Xiaomi Override 
   <remove-project name="platform/hardware/xiaomi" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="EvoX" revision="bka-no-dolby" />
