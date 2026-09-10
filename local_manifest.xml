@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Custom Remotes -->
+  <!-- Remotes -->
   <remote name="Justadeayo" fetch="https://github.com/Justadeayo" clone-depth="1" />
-  <remote name="GitLab-CuriousNom" fetch="https://gitlab.com/CuriousNom" clone-depth="1" />
-  <!--
-  <remote name="EvoX" fetch="https://github.com/Evolution-X-Devices" clone-depth="1" />
-  <remote name="adi8900" fetch="https://github.com/adi8900" clone-depth="1" />
-  -->
+  <remote name="GitLab-Justadeayo" fetch="https://gitlab.com/justadeayo" clone-depth="1" />
 
   <!-- Device Tree -->
-  <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="16.2" />
-
-  <!-- Vendor Tree -->
-  <project path="vendor/xiaomi/violet" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="16" />
-
-  <!-- Kernel Source Tree -->
-  <project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="Justadeayo" revision="sixteen" />
+  <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="17" />
   
+  <!-- Kernel Source Tree -->
+  <project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="Justadeayo" revision="17" />
+  
+  <!-- Vendor Tree -->
+  <project path="vendor/xiaomi/violet" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="17" />
+
   <!-- Firmware Repository (GitLab) -->
-  <project path="vendor/xiaomi-firmware/violet" name="chaste_vendor-xiaomi-firmware-violet" remote="GitLab-CuriousNom" revision="14.0" />
+  <project path="vendor/xiaomi-firmware/violet" name="vendor-xiaomi-firmware-violet" remote="GitLab-Justadeayo" revision="14.0" />
 
   <!-- Miui Camera -->
   <project path="vendor/MiuiCamera" name="Xiaomi_Camera" remote="Justadeayo" revision="cam" />
   
-  <!-- Hardware Xiaomi Override 
-  <remove-project name="platform/hardware/xiaomi" />
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="EvoX" revision="bka-no-dolby" />
-  <remove-project name="platform/hardware/packages/DSPVolumeSynchronizer" /> 
-  -->
-  <!-- Dolby Hardware Source
-  <project path="hardware/dolby" name="hardware_dolby" remote="adi8900" revision="lunaris" />
-  -->
 </manifest>
