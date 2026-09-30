@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remotes -->
+  <remote name="Justadeayo" fetch="https://github.com/Justadeayo" clone-depth="1" />
+  <remote name="GitLab-Justadeayo" fetch="https://gitlab.com/justadeayo" clone-depth="1" />
+
+  <!-- Device Tree -->
+  <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="dev" />
+  
+  <!-- Kernel Source Tree -->
+  <project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="Justadeayo" revision="dev" />
+  
+  <!-- Vendor Tree -->
+  <project path="vendor/xiaomi/violet" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="17" />
+
+  <!-- Firmware Repository (GitLab) -->
+  <project path="vendor/xiaomi-firmware/violet" name="vendor-xiaomi-firmware-violet" remote="GitLab-Justadeayo" revision="14.0" />
+
+  <!-- Miui Camera -->
+  <project path="vendor/MiuiCamera" name="Xiaomi_Camera" remote="Justadeayo" revision="cam" />
+  
+</manifest>
