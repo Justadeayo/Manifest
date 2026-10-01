@@ -4,7 +4,9 @@
   <!-- Remotes -->
   <remote name="Justadeayo" fetch="https://github.com/Justadeayo" clone-depth="1" />
   <remote name="GitLab-Justadeayo" fetch="https://gitlab.com/justadeayo" clone-depth="1" />
-
+  <remote name="Evolution-X-Devices" fetch="https://github.com/Evolution-X-Devices" clone-depth="1" />
+  <remote name="adi8900" fetch="https://github.com/adi8900" clone-depth="1" />
+  
   <!-- Device Tree -->
   <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="17" />
   
@@ -25,5 +27,11 @@
   
   <!-- Basic Call Recorder -->
   <project path="vendor/bcr" name="vendor_bcr" remote="Justadeayo" revision="main" />
+  
+  <!-- Hardware Xiaomi -->
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="Evolution-X-Devices" revision="bka-no-dolby" />
+
+  <!-- Hardware Dolby -->
+  <project path="hardware/dolby" name="hardware_dolby" remote="adi8900" revision="lunaris" />
   
 </manifest>
