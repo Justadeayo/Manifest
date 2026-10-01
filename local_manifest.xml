@@ -23,4 +23,7 @@
   <!-- Viper4AndroidFX -->
   <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Justadeayo" revision="v4a" />
   
+  <!-- Basic Call Recorder -->
+  <project path="vendor/bcr" name="vendor_bcr" remote="Justadeayo" revision="main" />
+  
 </manifest>
