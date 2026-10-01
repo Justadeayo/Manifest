@@ -20,4 +20,7 @@
   <!-- Miui Camera -->
   <project path="vendor/MiuiCamera" name="Xiaomi_Camera" remote="Justadeayo" revision="cam" />
   
+  <!-- Viper4AndroidFX -->
+  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Justadeayo" revision="v4a" />
+  
 </manifest>
