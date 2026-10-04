@@ -37,5 +37,9 @@
   <!-- Override CAF Display HAL with patched fork -->
   <remove-project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Justadeayo" revision="lineage-24.0-caf-sm8150" />
+  
+  <!-- Override CAF Common with patched fork -->
+  <remove-project name="LineageOS/android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" />
+<project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="Justadeayo" revision="lineage-24.0" />
 
 </manifest>
