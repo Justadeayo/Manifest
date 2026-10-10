@@ -19,9 +19,6 @@
   <!-- Firmware Repository (GitLab) -->
   <project path="vendor/xiaomi-firmware/violet" name="vendor-xiaomi-firmware-violet" remote="GitLab-Justadeayo" revision="14.0" />
 
-  <!-- Miui Camera -->
-  <project path="vendor/MiuiCamera" name="Xiaomi_Camera" remote="Justadeayo" revision="cam" />
-  
   <!-- Viper4AndroidFX -->
   <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Justadeayo" revision="v4a" />
   
