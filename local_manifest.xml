@@ -8,19 +8,15 @@
   <remote name="adi8900" fetch="https://github.com/adi8900" clone-depth="1" />
   
   <!-- Device Tree -->
-  <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="17" />
+  <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="sub" />
+  <project path="device/xiaomi/sm6150-common" name="device_xiaomi_violet" remote="Justadeayo" revision="common" />
   
   <!-- Kernel Source Tree -->
-  <project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="Justadeayo" revision="17" />
+  <project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="Justadeayo" revision="common" />
   
   <!-- Vendor Tree -->
-  <project path="vendor/xiaomi/violet" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="17" />
-
-  <!-- Firmware Repository (GitLab) -->
-  <project path="vendor/xiaomi-firmware/violet" name="vendor-xiaomi-firmware-violet" remote="GitLab-Justadeayo" revision="14.0" />
-
-  <!-- Miui Camera -->
-  <project path="vendor/MiuiCamera" name="Xiaomi_Camera" remote="Justadeayo" revision="cam" />
+  <project path="vendor/xiaomi/violet" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="sub" />
+  <project path="vendor/xiaomi/sm6150-common" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="common" />
   
   <!-- Viper4AndroidFX -->
   <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Justadeayo" revision="v4a" />
@@ -29,7 +25,7 @@
   <project path="vendor/bcr" name="vendor_bcr" remote="Justadeayo" revision="main" />
   
   <!-- Hardware Xiaomi -->
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="Evolution-X-Devices" revision="bka-no-dolby" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="Justadeayo" revision="lineage-24.0" />
 
   <!-- Hardware Dolby -->
   <project path="hardware/dolby" name="hardware_dolby" remote="adi8900" revision="lunaris" />
@@ -37,5 +33,5 @@
   <!-- Override CAF Display HAL with patched fork -->
   <remove-project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Justadeayo" revision="lineage-24.0-caf-sm8150" />
-
+  
 </manifest>
