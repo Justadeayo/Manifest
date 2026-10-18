@@ -8,25 +8,15 @@
   <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="new" />
   
   <!-- Kernel Source Tree -->
-  <project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="Justadeayo" revision="17" />
+  <project path="kernel/xiaomi/violet" name="android_kernel_xiaomi_violet" remote="Justadeayo" revision="new" />
   
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi/violet" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="new" />
-
-  <!-- Viper4AndroidFX -->
-  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Justadeayo" revision="v4a" />
-  
-  <!-- Basic Call Recorder -->
-  <project path="vendor/bcr" name="vendor_bcr" remote="Justadeayo" revision="main" />
   
   <!-- Hardware Xiaomi -->
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="Justadeayo" revision="lineage-24.0" />
 
   <!-- Vendor Dolby -->
   <project path="vendor/oneplus/dolby" name="vendor_oneplus_dolby" remote="Justadeayo" revision="main" />
-  
-  <!-- Override CAF Display HAL with patched fork -->
-  <remove-project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="Justadeayo" revision="lineage-24.0-caf-sm8150" />
 
 </manifest>
