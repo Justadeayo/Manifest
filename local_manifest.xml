@@ -3,7 +3,6 @@
 
   <!-- Remotes -->
   <remote name="Justadeayo" fetch="https://github.com/Justadeayo" clone-depth="1" />
-  <remote name="GitLab-Justadeayo" fetch="https://gitlab.com/justadeayo" clone-depth="1" />
 
   <!-- Device Tree -->
   <project path="device/xiaomi/violet" name="device_xiaomi_violet" remote="Justadeayo" revision="17" />
@@ -14,16 +13,13 @@
   <!-- Vendor Tree -->
   <project path="vendor/xiaomi/violet" name="platform_vendor_xiaomi_violet" remote="Justadeayo" revision="17" />
 
-  <!-- Firmware Repository (GitLab) -->
-  <project path="vendor/xiaomi-firmware/violet" name="vendor-xiaomi-firmware-violet" remote="GitLab-Justadeayo" revision="14.0" />
-
   <!-- Miui Camera -->
   <project path="vendor/MiuiCamera" name="Xiaomi_Camera" remote="Justadeayo" revision="cam" />
   
-  <!-- Viper4AndroidFX -->
-  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Justadeayo" revision="v4a" />
-  
-  <!-- Basic Call Recorder -->
-  <project path="vendor/bcr" name="vendor_bcr" remote="Justadeayo" revision="main" />
-  
+  <!-- Hardware Xiaomi -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="Justadeayo" revision="lineage-24.0" />
+
+  <!-- Vendor Dolby -->
+  <project path="vendor/oneplus/dolby" name="vendor_oneplus_dolby" remote="Justadeayo" revision="main" />
+ 
 </manifest>
