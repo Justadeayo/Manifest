@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="Justadeayo"
+     fetch="https://github.com/Justadeayo/"
+     clone-depth="1" />
+  <remote name="los"
+     fetch="https://github.com/LineageOS/"
+     revision="lineage-24.0"
+     clone-depth="1" />
+    <!-- Sync hardware -->
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="los" />
+  <project path="hardware/samsung_slsi/nfc" name="android_hardware_samsung_slsi_nfc" remote="los" />
+  <project path="hardware/samsung_slsi/libbt" name="android_hardware_samsung_slsi_libbt" remote="los" />
+  <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" remote="los" />
+  <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" remote="los" />
+  <project path="hardware/samsung_slsi-linaro/codec2" name="android_hardware_samsung_slsi-linaro_codec2" remote="los" />
+  <project path="hardware/samsung_slsi-linaro/config" name="android_hardware_samsung_slsi-linaro_config" remote="los" />
+  <project path="hardware/samsung_slsi-linaro/exynos" name="android_hardware_samsung_slsi-linaro_exynos" remote="los" />
+  <project path="hardware/samsung_slsi-linaro/exynos5" name="android_hardware_samsung_slsi-linaro_exynos5" remote="los" />
+  <project path="hardware/samsung_slsi-linaro/graphics" name="android_hardware_samsung_slsi-linaro_graphics" remote="Justadeayo" revision="lineage-24.0" />
+  <project path="hardware/samsung_slsi-linaro/openmax" name="android_hardware_samsung_slsi-linaro_openmax" remote="los" />
+  <project path="hardware/samsung_slsi-linaro/interfaces" name="android_hardware_samsung_slsi-linaro_interfaces" remote="los" />
+  <!-- Kernel -->
+  <project path="kernel/samsung/universal9611" name="android_kernel_samsung_universal9611" remote="Justadeayo" revision="17" />
+  <!-- Devices trees -->
+  <project path="device/samsung/universal9611-common" name="android_device_samsung_universal9611-common" remote="Justadeayo" revision="17" />
+  <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="los" />
+  <project path="device/samsung/m31" name="android_device_samsung_m31" remote="Justadeayo" revision="17" />
+  <!-- Vendor trees -->
+  <project path="vendor/samsung/universal9611-common" name="android_vendor_samsung_universal9611-common" remote="Justadeayo" revision="17" />
+  <project path="vendor/samsung/m31" name="android_vendor_samsung_m31" remote="Justadeayo" revision="17" />
+</manifest>
